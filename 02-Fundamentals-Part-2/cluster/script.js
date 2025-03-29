@@ -1,11 +1,17 @@
-// Start with strict mode for secure javascript
-// strict mode를 위한 문장이 파일 가장 첫 명령이어야 해요. (주석 제외)
-"use strict";
+function logger() {
+  console.log("My name is kynoh");
+}
 
-let hasDriversLicense = false;
-const passTest = true;
+logger();
 
-if (passTest) hasDriverLicense = true;
-if (hasDriversLicense) console.log("I can Drive :D");
+function genFleetCluster(clst_area, clst_name, clst_commander) {
+  console.log(`Cluster Area : ${clst_area}
+Cluster Name : ${clst_name}
+Cluster Commander : ${clst_commander}
+`);
 
-const private = "Audio";
+  return clst_name;
+}
+
+clusterName = genFleetCluster("Asia", "Infinite Priciple", "Beihai Zhang");
+console.log(clusterName);
